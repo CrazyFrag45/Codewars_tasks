@@ -10,6 +10,8 @@ must maintain their original type.
 Note that numbers written as strings are strings and must be sorted with the
 other strings.
 '''
+
+
 #First:
 def db_sort(arr):
     digite_arr = []

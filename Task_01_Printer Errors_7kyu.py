@@ -24,12 +24,13 @@ s="aaaxbbbbyyhwawiwjjjwwm"
 error_printer(s) => "8/22"
 '''
 
-# First variation:
+
+# First:
 def printer_error(s):
     if s.isalpha():
         s = s.lower()
         color = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm']
-        error = ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        #error = ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
         color_true = 0
         color_error = 0
         for i in range(0,len(s)):
@@ -43,7 +44,8 @@ def printer_error(s):
     else:
         return False
 
-# Second variation:
+
+#Second:
 from re import sub
 def printer_error1(s):
     return "{}/{}".format(len(sub("[a-m]",'',s)),len(s))

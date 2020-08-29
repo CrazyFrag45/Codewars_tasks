@@ -13,6 +13,8 @@ Find the unique number (this kata)
 Find the unique string
 Find The Unique
 '''
+
+
 #First:
 def find_uniq(arr):
     a_set = list(set(arr))

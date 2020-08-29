@@ -21,6 +21,8 @@ Example
 
   delete_nth ([20,37,20,21],1) # return [20,37,21]
 '''
+
+
 #First:
 def delete_nth(order,max_e):
     new_arr = list()

@@ -12,7 +12,11 @@ The input will always be valid (numbers will be an array of length 2 or greater,
  different items from that array).
 
 Based on: http://oj.leetcode.com/problems/two-sum/
+twoSum [1, 2, 3] 4 === (0, 2)
 '''
+
+
+
 #First:
 def two_sum(numbers, target):
     j = 0
@@ -25,8 +29,7 @@ def two_sum(numbers, target):
                     return [i, j]
 
 
-
-#Second:
+# Second:
 def two_sum2(numbers, target):
     for i, x in enumerate(numbers):
         for j, y in enumerate(numbers):
@@ -34,12 +37,10 @@ def two_sum2(numbers, target):
                 return [i, j]
 
 
+print(two_sum([1, 2, 3], 4))
+print(two_sum([1234, 5678, 9012], 14690))
+print(two_sum([2, 2, 3], 4))
 
-print(two_sum([1,2,3], 4))
-print(two_sum([1234,5678,9012], 14690))
-print(two_sum([2,2,3], 4))
-
-
-print(two_sum2([1,2,3], 4))
-print(two_sum2([1234,5678,9012], 14690))
-print(two_sum2([2,2,3], 4))
+print(two_sum2([1, 2, 3], 4))
+print(two_sum2([1234, 5678, 9012], 14690))
+print(two_sum2([2, 2, 3], 4))

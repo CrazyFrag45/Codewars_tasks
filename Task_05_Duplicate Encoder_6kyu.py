@@ -19,7 +19,8 @@ the "XXX" is actually the expected result, not the input! (these languages are l
 correct it).
 '''
 
-#First var:
+
+# First:
 def duplicate_encode(word):
     word = word.lower()
     word_res = ''
@@ -30,7 +31,8 @@ def duplicate_encode(word):
             word_res += ')'
     return word_res
 
-#Second var:
+
+#Second:
 def duplicate_encode2(word):
     return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 
