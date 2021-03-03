@@ -21,10 +21,21 @@ def function(start_num, end_num):
     return nums
 
 
-print(function(2, 6))  # [3,4,5,6,7,8]
-print(function([2, 2, 2, 2]))  # 0
-print(function([1, 1, 1, 3]))  # 2
+# Second:
+def function2(start_num, end_num):
+    return list(range(start_num + 1, end_num))
 
-print(function([1, 1, 3, 3]))  # 4
-print(function([1, 3, 3, 3]))  # 6
-print(function([3, 3, 3, 3]))  # 8
+
+print(function(2, 9))  # [3,4,5,6,7,8]
+print(function(6, 8))  # [7]
+print(function(2, 9))  # [3,4,5,6,7,8]
+print(function(3, 5))  # [4]
+print(function(5, 9))  # [6, 7, 8]
+print(function(2, 5))  # [3, 4,]
+
+print(function2(2, 9))  # [3,4,5,6,7,8]
+print(function2(6, 8))  # [7]
+print(function2(2, 9))  # [3,4,5,6,7,8]
+print(function2(3, 5))  # [4]
+print(function2(5, 9))  # [6, 7, 8]
+print(function2(2, 5))  # [3, 4,]
